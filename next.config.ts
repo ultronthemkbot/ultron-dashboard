@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Include data/ files in serverless function bundles for Vercel
+  outputFileTracingIncludes: {
+    '/api/*': ['./data/**/*'],
+  },
 };
 
 export default nextConfig;
