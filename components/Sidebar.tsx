@@ -2,11 +2,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { LayoutDashboard, Brain, GitBranch, Clock, Settings, Activity, Menu, X, BookOpen } from 'lucide-react';
+import { LayoutDashboard, Brain, GitBranch, Clock, Settings, Activity, Menu, X, BookOpen, Cpu } from 'lucide-react';
 
 const links = [
   { href: '/dashboard', label: 'Dashboard', Icon: LayoutDashboard },
   { href: '/memory', label: 'Memory', Icon: Brain },
+  { href: '/neural-memory', label: 'Neural Memory', Icon: Cpu },
   { href: '/history', label: 'History', Icon: BookOpen },
   { href: '/flow', label: 'Architecture', Icon: GitBranch },
   { href: '/cron', label: 'Cron Jobs', Icon: Clock },
